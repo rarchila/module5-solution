@@ -1,37 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@rarchila 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-Amruta190
-/
-coursera-test
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-coursera-test/sites/module5-solution/js/script.js
-@Amruta190
-Amruta190 HTML, CSS, JS module-5 Assignment
-Latest commit 64f3e0d 1 hour ago
- History
- 1 contributor
-345 lines (289 sloc)  11.2 KB
-  
 $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
   // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
