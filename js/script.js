@@ -117,8 +117,8 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       //
       // var homeHtmlToInsertIntoMainPage = ....
-      var homeHtmlToInsertIntoMainPage = dc.loadMenuItems(chosenCategoryShortName);
-      console.log(dc.loadMenuItems(chosenCategoryShortName));
+      console.log(chosenCategoryShortName,categories[chosenCategoryShortName]);
+      var homeHtmlToInsertIntoMainPage = dc.loadMenuItems(categories[chosenCategoryShortName]);
       console.log(homeHtmlToInsertIntoMainPage);
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
