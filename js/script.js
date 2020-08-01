@@ -1,3 +1,37 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@rarchila 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+Amruta190
+/
+coursera-test
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+coursera-test/sites/module5-solution/js/script.js
+@Amruta190
+Amruta190 HTML, CSS, JS module-5 Assignment
+Latest commit 64f3e0d 1 hour ago
+ History
+ 1 contributor
+345 lines (289 sloc)  11.2 KB
+  
 $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
   // Same as document.querySelector("#navbarToggle").addEventListener("blur",...
@@ -102,7 +136,7 @@ function buildAndShowHomeHTML (categories) {
       // Pay attention to what type of data that function returns vs what the chosenCategoryShortName
       // variable's name implies it expects.
       // var chosenCategoryShortName = ....
-      var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
+      var chosenCategoryShortName = "'"+chooseRandomCategory(categories).short_name+"'";
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
@@ -116,13 +150,15 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       //
       // var homeHtmlToInsertIntoMainPage = ....
-      var homeHtmlToInsertIntoMainPage = dc.loadMenuItems(chosenCategoryShortName);
+      
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", chosenCategoryShortName);
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
       // of how to do that.
       // ....
-      insertHtml('#main-content',homeHtmlToInsertIntoMainPage)
+      insertHtml("#main-content", homeHtmlToInsertIntoMainPage); 
+
     },
     false); // False here because we are getting just regular HTML from the server, so no need to process JSON.
 }
